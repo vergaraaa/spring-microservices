@@ -15,6 +15,7 @@ public record CustomerController(CustomerService customerService) {
     @PostMapping
     public void registerCustomer(@RequestBody CreateCustomerDTO createCustomerDTO) {
         log.info("New customer registartion {}", createCustomerDTO);
+        
         customerService.registerCustomer(createCustomerDTO);
     }
 }
