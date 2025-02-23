@@ -3,7 +3,12 @@ package com.vergaraaa.customer;
 import org.springframework.stereotype.Service;
 
 @Service
-public record CustomerService(CustomerRepository customerRepository) {
+public class CustomerService {
+    public CustomerService(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+    
+    private final CustomerRepository customerRepository;
 
     public void registerCustomer(CreateCustomerDTO createCustomerDTO) {
         Customer customer = Customer.builder()
