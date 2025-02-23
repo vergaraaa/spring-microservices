@@ -15,28 +15,18 @@
       "name": "Spring Boot-FraudApplication<fraud>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "mainClass": "com.vergaraaa.spring.microservices.FraudApplication",
-      "projectName": "fraud",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-Main<fraud>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.vergaraaa.spring.microservices.Main",
-      "projectName": "fraud",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    },
-    {
-      "type": "java",
-      "name": "Spring Boot-FraudApplication<fraud>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
       "mainClass": "com.vergaraaa.fraud.FraudApplication",
       "projectName": "fraud",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaServerApplication<eureka-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.vergaraaa.eurekaserver.EurekaServerApplication",
+      "projectName": "eureka-server",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
